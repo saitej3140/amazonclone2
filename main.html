@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazon clone</title>
+    <link rel="stylesheet" href="amazonmain.css">
+</head>
+<body>
+    <header class="tophed">
+        <section class="leftsection">
+            <img class="amazonimg" src="https://supersimple.dev/projects/amazon/images/amazon-logo-white.png" alt="">
+        </section>
+        <section class="middlesection">
+            <input class="inputhold" type="text" placeholder="Search">
+            <button class="serchbtn">
+                <img class="serchimg" src="https://supersimple.dev/projects/amazon/images/icons/search-icon.png" alt="">
+            </button>
+        </section>
+        <section class="rightsection">
+            <div class="returnorderdiv">
+                <div onclick="orderreturnfun()">Returns<br>&Order</div>
+            </div>
+            <div onclick="cartfunc()" class="cartsec">
+                <img class="cartimg" src="https://supersimple.dev/projects/amazon/images/icons/cart-icon.png" alt="">
+                <div style="margin-top:10px;">Cart</div>
+                <div class="valuechange" style="position:absolute;left:34px;top:10px; color:rgb(254, 189, 105);">0</div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="productgrid">
+
+           <div class="producttemplate">
+              <div class="imgcontainer">
+                <img class="productimgsz checkoutimg1" src="https://supersimple.dev/projects/amazon/images/products/athletic-cotton-socks-6-pairs.jpg" alt="">
+              </div>
+              <div class="disccontainer discon1">Black and Gray Athletic Cotton Socks - 6 Pairs</div>
+              <div class="ratingdiv">
+                <img class="ratingimg"src="https://supersimple.dev/projects/amazon/images/ratings/rating-45.png" alt="">
+                <div style="margin-top:4px;color:green;">87</div>
+              </div>
+              <div class="pricecontainer pricecon1">$90.00</div>
+              <div class="quantitycontainer">
+                <select class="selectfield selectfield1" data-testid="quantity-selector">
+                   <option selected value="1">1</option>
+                   <option  value="2">2</option>
+                   <option  value="3">3</option>
+                   <option  value="4">4</option>
+                   <option  value="5">5</option>
+                   <option  value="6">6</option>
+                   <option  value="7">7</option>
+                   <option  value="8">8</option>
+                   <option  value="9">9</option>
+                </select>
+              </div>
+              <div class="addtocartmsg cartup1"></div>
+              <div class="buttoncontainer"><button value="1" onclick="functionfun(this.value)" class="addtocartbtn">Add to cart</button></div>
+           </div>
+
+           <div class="producttemplate">
+            <div class="imgcontainer">
+              <img class="productimgsz checkoutimg2" src="https://supersimple.dev/projects/amazon/images/products/intermediate-composite-basketball.jpg" alt="">
+            </div>
+            <div class="disccontainer discon2">Intermediate Size Basketball</div>
+            <div class="ratingdiv">
+              <img class="ratingimg"src="https://supersimple.dev/projects/amazon/images/ratings/rating-4.png" alt="">
+              <div style="margin-top:4px;color:green;">127</div>
+            </div>
+            <div class="pricecontainer pricecon2">$20.90</div>
+            <div class="quantitycontainer">
+              <select class="selectfield selectfield2" data-testid="quantity-selector">
+                 <option  selected value="1">1</option>
+                 <option  value="2">2</option>
+                 <option  value="3">3</option>
+                 <option  value="4">4</option>
+                 <option  value="5">5</option>
+                 <option  value="6">6</option>
+                 <option  value="7">7</option>
+                 <option  value="8">8</option>
+                 <option  value="9">9</option>
+              </select>
+            </div>
+            <div class="addtocartmsg cartup2"></div>
+            <div class="buttoncontainer"><button value="2" onclick="functionfun(this.value)" class="addtocartbtn">Add to cart</button></div>
+           </div>
+           
+           <div class="producttemplate">
+            <div class="imgcontainer">
+              <img class="productimgsz checkoutimg3" src="https://supersimple.dev/projects/amazon/images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg" alt="">
+            </div>
+            <div class="disccontainer discon3">Adults Plain Cotton T-Shirt - 2 Pack</div>
+            <div class="ratingdiv">
+              <img class="ratingimg"src="https://supersimple.dev/projects/amazon/images/ratings/rating-45.png" alt="">
+              <div style="margin-top:4px;color:green;">56</div>
+            </div>
+            <div class="pricecontainer pricecon3">$7.99</div>
+            <div class="quantitycontainer">
+              <select class="selectfield selectfield3" data-testid="quantity-selector">
+                 <option  selected value="1">1</option>
+                 <option  value="2">2</option>
+                 <option  value="3">3</option>
+                 <option  value="4">4</option>
+                 <option  value="5">5</option>
+                 <option  value="6">6</option>
+                 <option  value="7">7</option>
+                 <option  value="8">8</option>
+                 <option  value="9">9</option>
+              </select>
+            </div>
+            <div class="addtocartmsg cartup3"></div>
+            <div class="buttoncontainer"><button value="3" onclick="functionfun(this.value)" class="addtocartbtn">Add to cart</button></div>
+           </div>
+
+           <div class="producttemplate">
+            <div class="imgcontainer">
+              <img class="productimgsz checkoutimg4" src="https://supersimple.dev/projects/amazon/images/products/black-2-slot-toaster.jpg" alt="">
+            </div>
+            <div class="disccontainer discon4">2 Slot Toaster - Black</div>
+            <div class="ratingdiv">
+              <img class="ratingimg"src="https://supersimple.dev/projects/amazon/images/ratings/rating-5.png" alt="">
+              <div style="margin-top:4px;color:green;">2197</div>
+            </div>
+            <div class="pricecontainer pricecon4">$18.99</div>
+            <div class="quantitycontainer">
+              <select class="selectfield selectfield4" data-testid="quantity-selector">
+                 <option  selected value="1">1</option>
+                 <option  value="2">2</option>
+                 <option  value="3">3</option>
+                 <option  value="4">4</option>
+                 <option  value="5">5</option>
+                 <option  value="6">6</option>
+                 <option  value="7">7</option>
+                 <option  value="8">8</option>
+                 <option  value="9">9</option>
+              </select>
+            </div>
+            <div class="addtocartmsg cartup4"></div>
+            <div class="buttoncontainer"><button value="4" onclick="functionfun(this.value)" class="addtocartbtn">Add to cart</button></div>
+           </div>
+
+           <div class="producttemplate">
+            <div class="imgcontainer">
+              <img class="productimgsz checkoutimg5" src="https://supersimple.dev/projects/amazon/images/products/plain-hooded-fleece-sweatshirt-yellow.jpg" alt="">
+            </div>
+            <div class="disccontainer discon5">Plain Hooded Fleece Sweatshirt</div>
+            <div class="ratingdiv">
+              <img class="ratingimg"src="https://supersimple.dev/projects/amazon/images/ratings/rating-45.png" alt="">
+              <div style="margin-top:4px;color:green;">317</div>
+            </div>
+            <div class="pricecontainer pricecon5">$24.00</div>
+            <div class="quantitycontainer">
+              <select class="selectfield selectfield5" data-testid="quantity-selector">
+                 <option  selected value="1">1</option>
+                 <option  value="2">2</option>
+                 <option  value="3">3</option>
+                 <option  value="4">4</option>
+                 <option  value="5">5</option>
+                 <option  value="6">6</option>
+                 <option  value="7">7</option>
+                 <option  value="8">8</option>
+                 <option  value="9">9</option>
+              </select>
+            </div>
+            <div class="addtocartmsg cartup5"></div>
+            <div class="buttoncontainer"><button value="5" onclick="functionfun(this.value)" class="addtocartbtn">Add to cart</button></div>
+           </div>
+
+           <div class="producttemplate">
+            <div class="imgcontainer">
+              <img class="productimgsz checkoutimg6" src="https://supersimple.dev/projects/amazon/images/products/luxury-tower-set-6-piece.jpg" alt="">
+            </div>
+            <div class="disccontainer discon6">Luxury Towel Set - Graphite Gray</div>
+            <div class="ratingdiv">
+              <img class="ratingimg"src="https://supersimple.dev/projects/amazon/images/ratings/rating-45.png" alt="">
+              <div style="margin-top:4px;color:green;">114</div>
+            </div>
+            <div class="pricecontainer pricecon6">$35.99</div>
+            <div class="quantitycontainer">
+              <select class="selectfield selectfield6" data-testid="quantity-selector">
+                 <option  selected value="1">1</option>
+                 <option  value="2">2</option>
+                 <option  value="3">3</option>
+                 <option  value="4">4</option>
+                 <option  value="5">5</option>
+                 <option  value="6">6</option>
+                 <option  value="7">7</option>
+                 <option  value="8">8</option>
+                 <option  value="9">9</option>
+              </select>
+            </div>
+            <div class="addtocartmsg cartup6"></div>
+            <div class="buttoncontainer"><button value="6" onclick="functionfun(this.value)" class="addtocartbtn">Add to cart</button></div>
+           </div>
+
+           <div class="producttemplate">
+            <div class="imgcontainer">
+              <img class="productimgsz checkoutimg7" src="https://supersimple.dev/projects/amazon/images/products/women-chiffon-beachwear-coverup-black.jpg" alt="">
+            </div>
+            <div class="disccontainer discon7">Women's Chiffon Beachwear</div>
+            <div class="ratingdiv">
+              <img class="ratingimg"src="https://supersimple.dev/projects/amazon/images/ratings/rating-45.png" alt="">
+              <div style="margin-top:4px;color:green;">235</div>
+            </div>
+            <div class="pricecontainer pricecon7">$20.7</div>
+            <div class="quantitycontainer">
+              <select class="selectfield selectfield7" data-testid="quantity-selector">
+                 <option  selected value="1">1</option>
+                 <option  value="2">2</option>
+                 <option  value="3">3</option>
+                 <option  value="4">4</option>
+                 <option  value="5">5</option>
+                 <option  value="6">6</option>
+                 <option  value="7">7</option>
+                 <option  value="8">8</option>
+                 <option  value="9">9</option>
+              </select>
+            </div>
+            <div class="addtocartmsg cartup7"></div>
+            <div class="buttoncontainer"><button value="7" onclick="functionfun(this.value)" class="addtocartbtn">Add to cart</button></div>
+           </div>
+
+           <div class="producttemplate">
+            <div class="imgcontainer">
+              <img class="productimgsz checkoutimg8" src="https://supersimple.dev/projects/amazon/images/products/men-slim-fit-summer-shorts-gray.jpg" alt="">
+            </div>
+            <div class="disccontainer discon8">Men's Slim-Fit Summer Shorts</div>
+            <div class="ratingdiv">
+              <img class="ratingimg"src="https://supersimple.dev/projects/amazon/images/ratings/rating-4.png" alt="">
+              <div style="margin-top:4px;color:green;">160</div>
+            </div>
+            <div class="pricecontainer pricecon8">$16.99</div>
+            <div class="quantitycontainer">
+              <select class="selectfield selectfield8" data-testid="quantity-selector">
+                 <option  selected value="1">1</option>
+                 <option  value="2">2</option>
+                 <option  value="3">3</option>
+                 <option  value="4">4</option>
+                 <option  value="5">5</option>
+                 <option  value="6">6</option>
+                 <option  value="7">7</option>
+                 <option  value="8">8</option>
+                 <option  value="9">9</option>
+              </select>
+            </div>
+            <div class="addtocartmsg cartup8"></div>
+            <div class="buttoncontainer"><button value="8" onclick="functionfun(this.value)" class="addtocartbtn">Add to cart</button></div>
+           </div>
+
+           <div class="producttemplate">
+            <div class="imgcontainer">
+              <img class="productimgsz checkoutimg9" src="https://supersimple.dev/projects/amazon/images/products/trash-can-with-foot-pedal-50-liter.jpg" alt="">
+            </div>
+            <div class="disccontainer discon9">Trash Can with Foot Pedal - Brushed Stainless Steel</div>
+            <div class="ratingdiv">
+              <img class="ratingimg"src="https://supersimple.dev/projects/amazon/images/ratings/rating-4.png" alt="">
+              <div style="margin-top:4px;color:green;">200</div>
+            </div>
+            <div class="pricecontainer pricecon9">$83.00</div>
+            <div class="quantitycontainer">
+              <select class="selectfield selectfield9" data-testid="quantity-selector">
+                 <option  selected value="1">1</option>
+                 <option  value="2">2</option>
+                 <option  value="3">3</option>
+                 <option  value="4">4</option>
+                 <option  value="5">5</option>
+                 <option  value="6">6</option>
+                 <option  value="7">7</option>
+                 <option  value="8">8</option>
+                 <option  value="9">9</option>
+              </select>
+            </div>
+            <div class="addtocartmsg cartup9"></div>
+            <div class="buttoncontainer"><button value="9" onclick="functionfun(this.value)" class="addtocartbtn">Add to cart</button></div>
+           </div>
+
+           <div class="producttemplate">
+            <div class="imgcontainer">
+              <img class="productimgsz checkoutimg10" src="https://supersimple.dev/projects/amazon/images/products/men-chino-pants-beige.jpg" alt="">
+            </div>
+            <div class="disccontainer discon10">Men's Classic-fit Pleated Chino Pants</div>
+            <div class="ratingdiv">
+              <img class="ratingimg"src="https://supersimple.dev/projects/amazon/images/ratings/rating-4.png" alt="">
+              <div style="margin-top:4px;color:green;">290</div>
+            </div>
+            <div class="pricecontainer pricecon10">$22.90</div>
+            <div class="quantitycontainer">
+              <select class="selectfield selectfield10" data-testid="quantity-selector">
+                 <option  selected value="1">1</option>
+                 <option  value="2">2</option>
+                 <option  value="3">3</option>
+                 <option  value="4">4</option>
+                 <option  value="5">5</option>
+                 <option  value="6">6</option>
+                 <option  value="7">7</option>
+                 <option  value="8">8</option>
+                 <option  value="9">9</option>
+              </select>
+            </div>
+            <div class="addtocartmsg cartup10"></div>
+            <div class="buttoncontainer"><button value="10" onclick="functionfun(this.value)" class="addtocartbtn">Add to cart</button></div>
+           </div>
+
+           <div class="producttemplate">
+            <div class="imgcontainer">
+              <img class="productimgsz checkoutimg11" src="https://supersimple.dev/projects/amazon/images/products/coffeemaker-with-glass-carafe-black.jpg" alt="">
+            </div>
+            <div class="disccontainer discon11">Coffeemaker with Glass Carafe</div>
+            <div class="ratingdiv">
+              <img class="ratingimg"src="https://supersimple.dev/projects/amazon/images/ratings/rating-4.png" alt="">
+              <div style="margin-top:4px;color:green;">300</div>
+            </div>
+            <div class="pricecontainer pricecon11">$22.50</div>
+            <div class="quantitycontainer">
+              <select class="selectfield selectfield11" data-testid="quantity-selector">
+                 <option  selected value="1">1</option>
+                 <option  value="2">2</option>
+                 <option  value="3">3</option>
+                 <option  value="4">4</option>
+                 <option  value="5">5</option>
+                 <option  value="6">6</option>
+                 <option  value="7">7</option>
+                 <option  value="8">8</option>
+                 <option  value="9">9</option>
+              </select>
+            </div>
+            <div class="addtocartmsg cartup11"></div>
+            <div class="buttoncontainer"><button value="11" onclick="functionfun(this.value)" class="addtocartbtn">Add to cart</button></div>
+           </div>
+
+           <div class="producttemplate">
+            <div class="imgcontainer">
+              <img class="productimgsz checkoutimg12" src="https://supersimple.dev/projects/amazon/images/products/men-cozy-fleece-zip-up-hoodie-red.jpg" alt="">
+            </div>
+            <div class="disccontainer discon12">Men's Full-Zip Hooded Fleece Sweatshirt</div>
+            <div class="ratingdiv">
+              <img class="ratingimg"src="https://supersimple.dev/projects/amazon/images/ratings/rating-4.png" alt="">
+              <div style="margin-top:4px;color:green;">3157</div>
+            </div>
+            <div class="pricecontainer pricecon12">$24.00</div>
+            <div class="quantitycontainer">
+              <select class="selectfield selectfield12" data-testid="quantity-selector">
+                 <option  selected value="1">1</option>
+                 <option  value="2">2</option>
+                 <option  value="3">3</option>
+                 <option  value="4">4</option>
+                 <option  value="5">5</option>
+                 <option  value="6">6</option>
+                 <option  value="7">7</option>
+                 <option  value="8">8</option>
+                 <option  value="9">9</option>
+              </select>
+            </div>
+            <div class="addtocartmsg cartup12"></div>
+            <div class="buttoncontainer"><button value="12" onclick="functionfun(this.value)" class="addtocartbtn">Add to cart</button></div>
+           </div>
+
+           
+        </div>
+    </main>
+</body>
+<script src="amazonmainpage.js"></script>
+</html>

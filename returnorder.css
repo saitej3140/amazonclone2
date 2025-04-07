@@ -1,0 +1,46 @@
+.maincontainer{
+    margin-top: 90;
+    margin-bottom:100px;
+    margin-left:315.4px;
+    margin-right:315.4px;
+    padding-left:20px;
+    padding-right:20px;
+}
+.page-title{
+    font-size:22px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.checkout-grid{
+    display: grid;
+    grid-template-columns:738px;
+    column-gap:10px;
+}
+.itemsmodule{
+    display: grid;
+    grid-template-columns: 100px 275.2px 275.2px;
+    margin-bottom:12px;
+    padding:18px;
+    border-color: rgb(222, 222, 222);
+}
+.itemsinfo{
+    margin-left:20px;
+}
+.checkborder{
+    border-width: 1px;
+    border-color: rgb(222, 222, 222);
+    border-style: solid;
+    margin-bottom:12px;
+    padding:10px;
+}
+.trackdiv{
+    width:100%;
+    height:40px;
+    margin-top:30px;
+    margin-right:10px;
+    margin-left:10px;
+    border: none;
+    border-radius:5px;
+    background-color:rgb(255, 216, 20);
+}
